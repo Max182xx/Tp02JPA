@@ -1,5 +1,6 @@
-package fr.diginamic;
+package fr.diginamic.services;
 
+import fr.diginamic.entites.Livre;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;

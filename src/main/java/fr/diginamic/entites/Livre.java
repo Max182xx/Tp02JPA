@@ -1,4 +1,4 @@
-package fr.diginamic;
+package fr.diginamic.entites;
 
 
 import jakarta.persistence.Entity;
@@ -16,7 +16,8 @@ public class Livre {
     private String auteur;
 
     // Constructeurs, getters et setters
-    public Livre() {}
+    public Livre() {
+    }
 
     public Livre(String titre, String auteur) {
         this.titre = titre;
@@ -24,13 +25,28 @@ public class Livre {
     }
 
     // Getters et Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public Long getId() {
+        return id;
+    }
 
-    public String getTitre() { return titre; }
-    public void setTitre(String titre) { this.titre = titre; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public String getAuteur() { return auteur; }
-    public void setAuteur(String auteur) { this.auteur = auteur; }
+    public String getTitre() {
+        return titre;
+    }
+
+    public void setTitre(String titre) {
+        this.titre = titre;
+    }
+
+    public String getAuteur() {
+        return auteur;
+    }
+
+    public void setAuteur(String auteur) {
+        this.auteur = auteur;
+    }
 }
 
